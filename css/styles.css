@@ -6,12 +6,13 @@
     list-style: none;
     text-decoration: none;
     scroll-behavior: smooth;
+    transition: all 0.5s ease;
 }
 
 :root{
     --main-color: #FAF8F1;
     --text-color: #f25816;
-    --bg-color:  #34033f;
+    --bg-color:  #121212;
     --big-font: 5rem;
     --h2-font: 3rem;
     --pfont: 1rem;
@@ -22,16 +23,16 @@ body{
     color: var(--main-color);
 }
 
-Header{
+header{
+    width: 100vw;
     position: fixed;
     top: 0;
     right: 0;
     z-index: 1000;
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 30px 150px;
+    padding: 30px 10%;
     background: var(--bg-color);
 }
 
@@ -54,7 +55,7 @@ Header{
 }
 
 .navbar li a{
-    padding: 10px 20px;
+    padding-left: 20px;
     color: var(--main-color);
     font-size: 0.9rem;
 }
@@ -72,12 +73,12 @@ Header{
 /*home section*/
 
 section{
-    padding: 70px 17%;
+    padding: 50px 10% 30px;
 }
 
 .home{
     width: 100%;
-    min-height: 90vh;
+    height: 80vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
@@ -358,9 +359,7 @@ section{
 
 
 @media (max-width: 1560px){
-   header{
-    padding: 20px 30px;
-   }
+
    :root{
     --h2-font:2.5rem
    }
@@ -376,7 +375,7 @@ section{
     }
     header .navbar{
         position: absolute;
-        top: -400px;
+        top: -500px;
         right: 0;
         left: 0;
         display: flex;
