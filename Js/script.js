@@ -8,3 +8,18 @@ menu. addEventListener("click", function() {
 window.onscroll = () => {
     navbar.classList.remove("active");
 }
+
+
+//UpScrolling arrow
+
+const upArrow = document.querySelector("#uparrow");
+
+window.addEventListener("scroll", ()=>{
+    if(window.scrollY > 100){
+        upArrow.classList.add("active-btn")
+    } else{
+        upArrow.classList.remove("active-btn")
+    }
+})
+
+
